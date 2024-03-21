@@ -29,6 +29,7 @@ module.exports = class UserServer {
         
         /** a single middleware to handle all */
         app.all('/api/:moduleName/:fnName', this.userApi.mw);
+        app.all('/api/:moduleName/:fnName/:id', this.userApi.mw);
 
         let server = http.createServer(app);
         server.listen(this.config.dotEnv.USER_PORT, () => {

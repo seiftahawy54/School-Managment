@@ -8,7 +8,7 @@ module.exports = class TokenManager {
         this.config              = config;
         this.longTokenExpiresIn  = '3y';
         this.shortTokenExpiresIn = '1y';
-        this.userExposed         = ['v1_createShortToken']; // exposed functions
+        this.userExposed         = ['v1_createShortToken', 'verifyShortToken']; // exposed functions
     }
 
     /** 
