@@ -21,3 +21,5 @@
     - The app will be accessible at ``http://localhost:5111``
 - Run the project in dev mode : `yarn dev`
 - To create the API documentation : `yarn doc`
+
+Deployed @ https://school-managment-ydot.onrender.com
